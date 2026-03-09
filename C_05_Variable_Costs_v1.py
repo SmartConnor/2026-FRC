@@ -101,6 +101,7 @@ def get_expenses(exp_type, how_many):
 
         all_items.append(item_name)
         all_amounts.append(amount)
+        all_dollar_per_item.append(cost)
 
     # make panda
     expense_frame = pandas.DataFrame(expenses_dict)
