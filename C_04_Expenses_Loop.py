@@ -11,10 +11,9 @@ def not_blank(question):
 
 def num_checker(question, num_type="float", exit_code=None):
 
-    """Checks user enter an integer / float that is more than is more than
-    zero (or the optional exit code)"""
+    """Checks user enter a float / integer more than zero"""
 
-    if num_type == "integer":
+    if num_type == "float":
         error = "Oops - please enter an integer more than zero."
         change_to = int
     else:
