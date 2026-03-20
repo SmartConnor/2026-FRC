@@ -162,7 +162,7 @@ def get_expenses(exp_type, how_many=1):
     subtotal = expense_frame['Cost'].sum()
 
     # Apply currency formatting to currency columns.
-    add_dollars = ['Amount', '$ / Item', 'Cost']
+    add_dollars = ['$ / Item', 'Cost']
     for var_item in add_dollars:
         expense_frame[var_item] = expense_frame[var_item].apply(currency)
 
